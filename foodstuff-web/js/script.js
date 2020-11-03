@@ -11,7 +11,7 @@ $(function (){
 
 (function (global) {
 	var dc = {};
-	var homeHtml = "../html-snippets/home-page.html";
+	var homeHtml = "html-snippets/home-page.html";
 	//home-page html request
 	document.addEventListener("DOMContentLoaded", function(event) {
 		$ajaxUtils.sendGetRequest (
@@ -22,7 +22,7 @@ $(function (){
 			false
 		);
 	});
-	
+
 	global.$dc = dc;
 
 })(window);
