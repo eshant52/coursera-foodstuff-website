@@ -20,15 +20,17 @@ $(function (){
 
 	// loader
 	var loader = function (selector) {
-		var html = "";
+		var html = '<div class="d-flex justify-content-center">';
+  		html += '<div class="spinner-border" role="status">';
+    	html += '<span class="sr-only">Loading...</span>';
+  		html += '</div></div>';
+  		insertHtml(selector , html);
 	};
 
-
-
-
-
-	//home-page html request
 	document.addEventListener("DOMContentLoaded", function(event) {
+
+		loader("#main-content");
+		//http request for home html
 		$ajaxUtils.sendGetRequest (
 			homeHtml,
 			function (responseText){
