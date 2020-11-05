@@ -15,15 +15,15 @@ $(function (){
 
 	// Insert html function
 	var insertHtml = function (selector, html) {
-		document.querySelector(selector).insertHtml = html;
+		document.querySelector(selector).innerHTML = html;
 	};
 
 	// loader
 	var loader = function (selector) {
-		var html = '<div class="d-flex justify-content-center">';
+		var html = '<div id="blank" class="col-12"><div class="d-flex justify-content-center">';
   		html += '<div class="spinner-border" role="status">';
     	html += '<span class="sr-only">Loading...</span>';
-  		html += '</div></div>';
+  		html += '</div></div></div>';
   		insertHtml(selector , html);
 	};
 
