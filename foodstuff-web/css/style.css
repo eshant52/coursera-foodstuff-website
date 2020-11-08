@@ -13,9 +13,16 @@ body{
 	background-color: rgba(255, 255, 255, 0.4);
 }
 
+#spinner {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
 #brand-name span{
 	font-family: SegoePrint;
-	font-size: 1.5em;
+	font-size: 1.7rem;
 	color: #FF0066;
 }
 
@@ -30,7 +37,6 @@ body{
 	margin-right: 2px;
 	margin-left: 2px;
 	background-color: white;
-
 	border-radius: 9px;
 }
 
@@ -45,34 +51,36 @@ section {
 	width: 100%;
 }
 
-.active {
+.header-active {
 	padding: 0px 9px;
 	background-color: #00cc99;
 	border-radius: 35px;
 }
 
 .nav-active {
-	background-color: #6699ff;
-	color: white;
+	padding: 0px 4px;
+	background-color: #ccffcc;
+	border-radius: 0px 0px 10px 10px;
 }
 
 #navbar-2 a{
 	font-size: 12px;
+	font-weight: bold;
+	color: #009999;
 }
 
-.card {
+#navbar-2 a:hover {
+	color: #ff0066;
+}
+
+#navbar-2 {
+	border-radius: 0px 0px 10px 10px;
+	background-color: #ffcccc;
+}
+
+#home-card {
 	background-color: rgba(255, 255, 255, 0.4);
 }
-
-/*
-#content-1 div {
-	background: url('../video/trial/first.mp4');
-	width: 100%;
-	height: 200px;
-	background-size: ;
-	background-repeat: no-repeat;
-}
-*/
 
 #footer {
 	background-color: #ccffff;
@@ -82,46 +90,67 @@ section {
 	text-align: center;
 }
 
+span {
+	font-size: 13px;
+}
+
+.scrollspy-height {
+	height: 480px;
+	overflow: auto;
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* width */
+.scrollspy-height::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scrollspy-height::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.scrollspy-height::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.scrollspy-height::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+#list-1 {
+	position: relative;
+}
+
+.card-btn .btn {
+	border-radius: 0px 0px 3px 3px;
+}
 
 
-
-
-
-
-
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+	h2{
+		font-size: 16px;
+	}
+}
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-	#brand-name span{
-		font-family: SegoePrint;
-		font-size: 56px;
-		color: #FF0066;
+@media (min-width: 576px) and (max-width: 767.98px) {
+	h2{
+		font-size: 16px;
 	}
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-	#brand-name span{
-		font-family: SegoePrint;
-		font-size: 5px;
-		color: #FF0066;
-	}
-}
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-	#brand-name span{
-		font-family: SegoePrint;
-		font-size: 50px;
-		color: #FF0066;
-	}
-}
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-	#brand-name span{
-		font-family: SegoePrint;
-		font-size: 35px;
-		color: #FF0066;
-	}
-}
+@media (min-width: 1200px) { ... }

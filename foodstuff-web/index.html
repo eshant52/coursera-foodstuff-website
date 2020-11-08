@@ -13,7 +13,7 @@
 
 <body>
 	<header>
-		<div class="fluid-container bg-light">
+		<div class="fluid-container bg-light ">
 			<div class="container">
 		  		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		  			<div id="brand-name">
@@ -26,11 +26,11 @@
 		  			</button>
 			  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    		<ul class="navbar-nav ml-auto">
-				      		<li class="nav-item active mx-lg-3">
-				        		<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+				      		<li class="nav-item header-active mx-lg-3">
+				        		<a class="nav-link" href="#" onclick="$dc.homeHtml();">Home</span></a>
 				      		</li>
 				      		<li class="nav-item mx-lg-3">
-				        		<a class="nav-link" href="html-snippets/donation.html">Donate</a>
+				        		<a class="nav-link" href="#" onclick="$dc.donationHtml();">Donate</a>
 				      		</li>
 				      		<li class="nav-item dropdown mx-lg-3">
 				        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
@@ -40,20 +40,38 @@
 				          			<a class="dropdown-item" href="html-snippets/unhealthy.html">Unhealthy food stuff</a>
 				        		</div>
 				     		</li>
+				     		<li id="hide-1" class="nav-item header-active">
+		      					<a class="nav-link" href="#">hide</a>
+		    				</li>
 			    		</ul>
 			  		</div>
 				</nav>
 				
 			</div>
 		</div>
-		<div class="container">
-			<nav id="navbar-2" class="navbar navbar-light bg-light">
-				<ul class="nav nav-pills">
+		<div class="container" >
+			<nav id="navbar-2">
+				<ul class="nav nav-pills nav-fill">
 		    		<li class="nav-item">
-		      			<a class="nav-link" href="html-snippets/healthy-page.html">Healthy Food Stuff</a>
+		      			<a class="nav-link" href="#" onclick="$dc.healthyFoodHtml();">Healthy Food Stuff</a>
 		    		</li>
 		    		<li class="nav-item">
-		      			<a class="nav-link" href="html-snippets/recipes.html">Recipies</a>
+		      			<a class="nav-link" href="#" onclick="$dc.recipeHtml();">Recipies</a>
+		    		</li>
+		    		<li class="nav-item">
+		      			<a class="nav-link" href="#" onclick="$dc.unhealthyFoodHtml();">Unhealthy food stuff</a>
+		    		</li>
+		    		<li class="nav-item">
+		      			<a class="nav-link" href="#" onclick="$dc.foodWasteHtml();">Food waste</a>
+		    		</li>
+		    		<li class="nav-item">
+		      			<a class="nav-link" href="#" onclick="$dc.streetFoodHtml();">Street Food</a>
+		    		</li>
+		    		<li class="nav-item">
+		      			<a class="nav-link" href="#" onclick="$dc.hungerIssueHtml();">Hunger Issues</a>
+		    		</li>
+		    		<li id="hide" class="nav-item nav-active">
+		      			<a class="nav-link" href="#">hide</a>
 		    		</li>
 		  		</ul>
 			</nav>
@@ -82,8 +100,8 @@
 					<section id="social-link" class="col-md-12"><hr>
 						<div>follow us</div>
 						<div>
-							<a href="" target="_blank"><img src="image/footer/icon/social-icon.jpg" width="20px" class="mx-3"></a>
-							<a href="" target="_blank"><img src="image/footer/icon/facebook-icon.png" width="20px" class="mx-3"></a>
+							<a href="" target="_blank"><img src="image/footer/icon/social-icon.jpg" width="20px" class="mx-2"></a>
+							<a href="" target="_blank"><img src="image/footer/icon/facebook-icon.png" width="20px" class="mx-2"></a>
 						</div>
 					</section>
 				</div>
