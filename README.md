@@ -1,6 +1,6 @@
 # coursera-foodstuff-website
 
-My first web development project.
+The website foodstuff is food blog site.
 
 ## Technologies
 1. HTML
@@ -8,4 +8,4 @@ My first web development project.
 3. Javascript
 4. JQuery
 
-Click to visit [foodstuff](https://eshant52.github.io/coursera-foodstuff-website/) site.
+Click to visit [foodstuff](https://eshant52.github.io/coursera-foodstuff-website/foodstuff-web) site.
