@@ -1,6 +1,6 @@
 # coursera-foodstuff-website
 
-The website foodstuff is food blog site.
+Food blog website.
 
 ## Technologies
 1. HTML
